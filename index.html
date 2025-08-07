@@ -1429,7 +1429,7 @@
                             <video id="tutorialVideo">
                                 <!-- Source will be set dynamically -->
                                 Your browser does not support the video tag.
-                            <source src="https://ucarecdn.com/ca11126d-21e3-4fc8-bfc7-928dfa258b96/videoinformation.mp4" type="video/mp4"><source src="https://ucarecdn.com/ca11126d-21e3-4fc8-bfc7-928dfa258b96/videoinformation.mp4" type="video/webm"></video>
+                            <source src="English_US_video_information_V1.mp4" type="video/mp4"><source src="English_US_video_information_V1.mp4" type="video/webm"></video>
                             <div class="loading-spinner" id="loadingSpinner">
                                 <div class="spinner"></div>
                                 <div class="loading-percentage">0%</div>
@@ -1747,42 +1747,22 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Enhanced video files mapping with fallbacks
-            const videoFiles = {
-                 'english': [
-                    { url: 'https://ucarecdn.com/ca11126d-21e3-4fc8-bfc7-928dfa258b96/videoinformation.mp4', type: 'video/mp4' },
-                    { url: 'https://ucarecdn.com/ca11126d-21e3-4fc8-bfc7-928dfa258b96/videoinformation.mp4', type: 'video/webm' }
-                ],
-                'filipino': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/filipino.mp4', type: 'video/mp4' }
-                ],
-                'hindi': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/hindi.mp4', type: 'video/mp4' }
-                ],
-                'portuguese': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/portuguese.mp4', type: 'video/mp4' }
-                ],
-                'spanish': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/spanish.mp4', type: 'video/mp4' }
-                ],
-                'tamil': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/Tamil.mp4', type: 'video/mp4' }
-                ],
-                'arabic': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/Arabic.mp4', type: 'video/mp4' }
-                ],
-                'french': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/French.mp4', type: 'video/mp4' }
-                ],
-                'swedish': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/Swedish.mp4', type: 'video/mp4' }
-                ],
-                'japanese': [
-                    { url: 'https://translationmeta2025-f87fc.web.app/japanese.mp4', type: 'video/mp4' }
-                ]
-            };
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Video files mapping
+        const videoFiles = {
+          'english': 'English_US_video_information_V1.mp4',
+          'filipino': 'Filipino_Tagalog_video_information_V1.mp4',
+          'hindi': 'Hindi_video_information_V1.mp4',
+          'portuguese': 'Portuguese_Brazil_video_information_V1.mp4',
+          'spanish': 'Spanish_Spain_video_information_V1.mp4',
+          'tamil': 'Tamil_video_information_V1.mp4',
+          'arabic': 'Arabic_video_information_V1.mp4',
+          'french': 'French_France_video_information_V1.mp4',
+          'swedish': 'Swedish_video_information_V1.mp4',
+          'japanese': 'Japanese_video_information_V1.mp4'
+        };
+
             
             // DOM Elements
             const themeToggle = document.getElementById('themeToggle');
